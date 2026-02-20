@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%------new-----
+\usepackage{newtxtext}
+\usepackage{newunicodechar}
+\newunicodechar{₹}{\ensuremath{\mathsf{Rs.}}}
+%--------------
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Prajwal Aaryan Immadi} \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91-9059006666 ~
+    \href{mailto:prajwal1084@email.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{prajwal1084@email.com}} ~
+    \href{https://linkedin.com/in/prajwal-aaryan-immadi}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/prajwal-aaryan-immadi}}  ~
+    \href{https://github.com/prajwal816}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/prajwal816}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VIT-AP University}{Sep. 2023 -- Present}
+      {Bachelor of Technology in Computer Science and Engineering -- CGPA: 9.06/10}{Amaravati, India}
+    \resumeSubheading
+      {BSc (Hons) in Data Science \& Artificial Intelligence}{Oct. 2023 -- Present}
+      {IIT Guwahati (Online)}{India}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Infosys}{Sep 2025 -- Nov 2025}
+      {Web Engineering Intern}{Remote}
+      \resumeItemListStart
+        \resumeItem{Architected 12+ modular software components and automated 8 workflows using Python, reducing routine task time by 20\% and improving code stability by 15\% through systematic debugging and CI/CD pipelines.}
+        \resumeItem{Delivered 5 cross-functional features across programming, database, and distributed systems modules, accelerating sprint velocity by 10\% in an Agile team of 6 engineers.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Cimhans}{Jun 2025 -- Jul 2025}
+      {Full Stack Developer Intern}{Hyderabad, Telangana}
+      \resumeItemListStart
+        \resumeItem{Deployed 4 responsive full-stack modules serving 500+ users, increasing engagement for mental-health services by 30\%.}
+        \resumeItem{Integrated secure authentication and REST API backend logic across 3 microservices, lowering user-flow errors by 25\%.}
+        \resumeItem{Optimized UI/UX performance across 10+ page components, improving interface load time by 40\% and earning a ₹20,000 stipend.}
+  \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{CMS Trigger Emulation Pipeline} $|$ \emph{Python, LightGBM, ROOT, SHAP, Parquet}}{\href{https://github.com/prajwal816/CMS-TriggerEmulation}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Built an end-to-end ML pipeline emulating CMS High-Level Trigger decisions on 1.37M+ Run-2 DoubleMuon collision events from CERN Open Data, converting 6 ROOT NanoAOD branches to certified Parquet format.}
+            \resumeItem{Achieved ROC-AUC of 0.854 via leakage-safe multi-label LightGBM classification with event-level grouping across 1.17M unique events; applied SHAP explainability and drift monitoring over 3 trigger paths.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{CMS SUSY Signal Region Analysis} $|$ \emph{Python, ROOT, Scikit-learn, Pandas}}{\href{https://github.com/prajwal816/CMS-SUSY-Analysis}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Constructed a SUSY vs.\ Standard Model classification pipeline processing 500K+ CMS 2016G collision events, extracting 15+ physics features from ROOT files and engineering signal-region discriminants.}
+            \resumeItem{Evaluated 4 classifier architectures with cross-validated statistical analysis, applying data-driven background estimation to isolate SUSY signal regions at 95\% confidence level.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{CMS Anomaly Detection in Jet Physics} $|$ \emph{Python, ROOT, NumPy, Matplotlib}}{\href{https://github.com/prajwal816/CMS-Anomalies}{\underline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Designed anomaly detection pipelines across 4 detector subsystems---jet substructure, jet flavor tagging, event-shape variables, and vertex/pileup---processing 200K+ collision events from CMS Open Data.}
+            \resumeItem{Executed statistical anomaly scoring on jet composition and trigger-rate distributions, flagging 2.3\% outlier events for quality monitoring of detector data integrity.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------RESEARCH-----------
+\section{Research \& Publications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Higgs Boson Detection}}{2024}
+          \resumeItemListStart
+            \resumeItem{Trained 3 ML models on 250K+ simulated collision events for Higgs boson signature identification, achieving 89\% classification accuracy; paper submitted for publication.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Pneumonia Chest X-ray Detection}}{2024}
+          \resumeItemListStart
+            \resumeItem{Designed a CNN-based classification pipeline on 5,800+ chest X-ray images achieving 94\% detection accuracy; paper accepted for academic conference presentation.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Azure AI Engineer Associate} -- Microsoft (Credential: CE52B8908052CDE0) \hfill \textit{Jun. 2024} \\
+     \textbf{Certified Data Science Professional} -- Oracle {\href{https://catalog-education.oracle.com/ords/certview/sharebadge?id=43ECAB989EA0229D953BE2A3A061203208976D994170DEFEE0EDC0B5373ABD8A}{\underline{Link}}} \hfill \textit{Oct. 2025}
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, Java, R, SQL, JavaScript} \\
+     \textbf{ML/AI Frameworks}{: PyTorch, TensorFlow, Scikit-learn, LightGBM, Graph Neural Networks, CNNs, Reinforcement Learning} \\
+     \textbf{Scientific Computing}{: ROOT, NumPy, Pandas, SciPy, Matplotlib, Statistical Analysis, Mathematical Modeling} \\
+     \textbf{Tools \& Infrastructure}{: Git, Linux, Docker, FastAPI, REST APIs, CI/CD, Azure, Tableau} \\
+    }}
+ \end{itemize}
+
+
+\end{document}
