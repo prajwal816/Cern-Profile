@@ -43,7 +43,7 @@
     <div class="hero-grid-overlay"></div>
     <div class="hero-content">
       <div class="hero-badge">RESEARCH PROFILE</div>
-      <h1 class="hero-name hero-name-serif">Prajwal Aaryan Immadi</h1>
+      <h1 class="hero-name">Prajwal Aaryan Immadi</h1>
       <div class="hero-subtitle">
         <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
       </div>
@@ -194,24 +194,10 @@
           <div class="entry-tags">
             <span>Python</span><span>LightGBM</span><span>ROOT</span><span>SHAP</span><span>Parquet</span>
           </div>
-          <div class="entry-body">
-            <div class="entry-section">
-              <h4>Problem Statement</h4>
-              <p>Emulating CMS High-Level Trigger decisions on large-scale Run-2 collision data to enable offline analysis of trigger efficiency and systematic uncertainties without requiring access to the full online trigger infrastructure.</p>
-            </div>
-            <div class="entry-section">
-              <h4>Technical Methodology</h4>
-              <p>Built an end-to-end ML pipeline processing 1.37M+ DoubleMuon collision events from CERN Open Data. Converted 6 ROOT NanoAOD branches to certified Parquet format. Implemented leakage-safe multi-label LightGBM classification with event-level grouping across 1.17M unique events.</p>
-            </div>
-            <div class="entry-section">
-              <h4>Results</h4>
-              <ul class="results-list">
-                <li><span class="result-metric">ROC-AUC 0.854</span> via multi-label classification with event-level grouping</li>
-                <li>SHAP explainability analysis and drift monitoring across <strong>3 trigger paths</strong></li>
-                <li>Processed <strong>1.37M+</strong> collision events from CERN Open Data Portal</li>
-              </ul>
-            </div>
-          </div>
+          <p class="entry-summary">End-to-end ML pipeline emulating CMS High-Level Trigger decisions on 1.37M+ Run-2 DoubleMuon collision events from CERN Open Data. Converted ROOT NanoAOD branches to Parquet format with leakage-safe multi-label LightGBM classification.</p>
+          <ul class="results-list">
+            <li><span class="result-metric">ROC-AUC 0.854</span> across 1.17M unique events with SHAP explainability and drift monitoring over 3 trigger paths</li>
+          </ul>
         </div>
       </div>
 
@@ -230,24 +216,10 @@
           <div class="entry-tags">
             <span>Python</span><span>ROOT</span><span>Scikit-learn</span><span>Pandas</span>
           </div>
-          <div class="entry-body">
-            <div class="entry-section">
-              <h4>Problem Statement</h4>
-              <p>Developing a classification pipeline to discriminate Supersymmetry (SUSY) signal events from Standard Model background processes in CMS 2016G collision data, enabling systematic exploration of beyond-Standard-Model physics signatures.</p>
-            </div>
-            <div class="entry-section">
-              <h4>Technical Methodology</h4>
-              <p>Constructed a SUSY vs. Standard Model classification pipeline processing 500K+ collision events. Extracted 15+ physics features from ROOT files and engineered signal-region discriminants. Evaluated 4 classifier architectures with cross-validated statistical analysis.</p>
-            </div>
-            <div class="entry-section">
-              <h4>Results</h4>
-              <ul class="results-list">
-                <li>Data-driven background estimation to isolate SUSY signal regions at <span class="result-metric">95% confidence level</span></li>
-                <li>Extracted <strong>15+</strong> physics features with engineered discriminants</li>
-                <li>Cross-validated evaluation of <strong>4 classifier architectures</strong></li>
-              </ul>
-            </div>
-          </div>
+          <p class="entry-summary">SUSY vs. Standard Model classification pipeline processing 500K+ CMS 2016G collision events. Extracted 15+ physics features from ROOT files and engineered signal-region discriminants across 4 classifier architectures.</p>
+          <ul class="results-list">
+            <li>Data-driven background estimation isolating SUSY signal regions at <span class="result-metric">95% confidence level</span></li>
+          </ul>
         </div>
       </div>
 
@@ -266,26 +238,14 @@
           <div class="entry-tags">
             <span>Python</span><span>ROOT</span><span>NumPy</span><span>Matplotlib</span>
           </div>
-          <div class="entry-body">
-            <div class="entry-section">
-              <h4>Problem Statement</h4>
-              <p>Designing multi-subsystem anomaly detection pipelines for CMS jet physics data to identify outlier events that may indicate detector malfunction, novel physics processes, or data quality issues across multiple detector subsystems.</p>
-            </div>
-            <div class="entry-section">
-              <h4>Technical Methodology</h4>
-              <p>Designed anomaly detection pipelines across 4 detector subsystems — jet substructure, jet flavor tagging, event-shape variables, and vertex/pileup — processing 200K+ collision events from CMS Open Data. Executed statistical anomaly scoring on jet composition and trigger-rate distributions.</p>
-            </div>
-            <div class="entry-section">
-              <h4>Results</h4>
-              <ul class="results-list">
-                <li>Flagged <span class="result-metric">2.3% outlier events</span> for quality monitoring</li>
-                <li>Analyzed across <strong>4 detector subsystems</strong></li>
-                <li>Processed <strong>200K+</strong> collision events for data integrity assessment</li>
-              </ul>
-            </div>
-          </div>
+          <p class="entry-summary">Anomaly detection pipelines across 4 CMS detector subsystems — jet substructure, flavor tagging, event-shape variables, and vertex/pileup — processing 200K+ collision events with statistical anomaly scoring.</p>
+          <ul class="results-list">
+            <li>Flagged <span class="result-metric">2.3% outlier events</span> for detector data quality monitoring across 4 subsystems</li>
+          </ul>
         </div>
-      <!-- Condensed Additional Projects -->
+      </div>
+
+      <!-- Additional Projects -->
       <div class="section-sub-header">
         <h3 class="sub-title">Additional Projects</h3>
         <div class="section-line"></div>
