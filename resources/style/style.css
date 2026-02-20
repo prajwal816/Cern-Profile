@@ -524,6 +524,28 @@ body {
   color: var(--text-muted);
 }
 
+.detail-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 0 0;
+}
+
+.detail-bullets li {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 3px 0 3px 16px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.detail-bullets li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--accent-cyan);
+  font-size: 0.75rem;
+}
+
 /* ===== Research Interests ===== */
 .interests-grid {
   display: grid;
