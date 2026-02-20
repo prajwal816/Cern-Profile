@@ -3,124 +3,383 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Prajwal Aaryan Immadi — Portfolio</title>
-  <meta name="description" content="Portfolio of Prajwal Aaryan Immadi — ML Engineer, Data Scientist, Python Developer." />
-  <meta name="keywords" content="Prajwal, Machine Learning, Data Science, Python, AI" />
+  <title>Prajwal Aaryan Immadi — Research Profile</title>
+  <meta name="description" content="Research profile of Prajwal Aaryan Immadi — Machine Learning Research, High Energy Physics, Scientific Computing." />
+  <meta name="keywords" content="Prajwal, CERN, CMS, Machine Learning, High Energy Physics, Scientific Computing, Data Science" />
   <link rel="icon" type="image/png" href="icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="resources/vendor/icofont/icofont.min.css" rel="stylesheet" />
-  <link href="resources/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="resources/vendor/remixicon/remixicon.css" rel="stylesheet" />
-  <link href="resources/vendor/venobox/venobox.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="resources/style/style.css" rel="stylesheet" />
 </head>
 <body>
-  <canvas id="particle-canvas"></canvas>
 
-  <!-- Header -->
-  <header id="header" class="header-tops">
-    <div class="container">
-      <h1><a href="index.html">Prajwal Aaryan Immadi</a></h1>
-      <h2 style="color:#ccd6f6">I'm <span class="typing" style="color:#64ffda"></span></h2>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header"><span>Home</span></a></li>
-          <li><a href="#about"><span>About</span></a></li>
-          <li><a href="#education"><span>Education</span></a></li>
-          <li><a href="#experience"><span>Experience</span></a></li>
-          <li><a href="#portfolio"><span>Projects</span></a></li>
-          <li><a href="#skills"><span>Skills</span></a></li>
-          <li><a href="#certifications"><span>Certifications</span></a></li>
-          <li><a href="#contacts"><span>Contact</span></a></li>
-        </ul>
-      </nav>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/prajwal-aaryan-immadi-b6a130289" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        <a href="https://github.com/prajwal816" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-        <a href="mailto:prajwal1084@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-      </div>
+  <!-- Fixed Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">[</span> PAI <span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" data-nav="about">Research Profile</a></li>
+        <li><a href="#research-interests" data-nav="research-interests">Interests</a></li>
+        <li><a href="#projects" data-nav="projects">Research</a></li>
+        <li><a href="#publications" data-nav="publications">Publications</a></li>
+        <li><a href="#skills" data-nav="skills">Competencies</a></li>
+        <li><a href="#experience" data-nav="experience">Experience</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </header>
+  </nav>
 
-  <!-- About -->
-  <section id="about" class="about">
-    <div class="about-me container">
-      <div class="section-title"><h2>About</h2><div class="title-underline"></div></div>
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-right">
-          <div class="profile-image-container">
-            <div class="profile-placeholder">
-              <i class="bx bx-user" style="font-size:4rem;color:#64ffda;"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-          <p>Aspiring Engineering Student with a foundation in Java, Python, and Machine Learning. Experienced in digital image processing basics and predictive modeling, with a dedication towards data-driven solutions. Participated in hackathons, internships, and projects that enhanced my technical and strategic evaluation skills.</p>
-          <div class="row info-grid">
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i><strong>Location:</strong> Bachupally, Hyderabad</li>
-                <li><i class="icofont-rounded-right"></i><strong>Degree:</strong> B.Tech CSE (VIT-AP)</li>
-              </ul>
-            </div>
-            <div class="col-lg-6">
-              <ul>
-                <li><i class="icofont-rounded-right"></i><strong>Email:</strong> prajwal1084@gmail.com</li>
-                <li><i class="icofont-rounded-right"></i><strong>GitHub:</strong> <a href="https://github.com/prajwal816" target="_blank" style="color:#64ffda">prajwal816</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <canvas id="particle-canvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">RESEARCH PROFILE</div>
+      <h1 class="hero-name">Prajwal Aaryan Immadi</h1>
+      <div class="hero-subtitle">
+        <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
       </div>
-    </div>
-    <!-- Interests -->
-    <div class="interests container">
-      <div class="section-title"><h2>Interests</h2><div class="title-underline"></div></div>
-      <div class="row">
-        <div class="col-lg-3 col-md-4"><div class="icon-box"><i class="ri-database-2-line" style="color:#64ffda"></i><h3>Machine Learning</h3></div></div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0"><div class="icon-box"><i class="ri-bar-chart-box-line" style="color:#ffd700"></i><h3>Data Science</h3></div></div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-md-0"><div class="icon-box"><i class="ri-camera-3-line" style="color:#e74c8b"></i><h3>Image Processing</h3></div></div>
-        <div class="col-lg-3 col-md-4 mt-4 mt-lg-0"><div class="icon-box"><i class="ri-brain-line" style="color:#48bfe3"></i><h3>Deep Learning</h3></div></div>
-        <div class="col-lg-3 col-md-4 mt-4"><div class="icon-box"><i class="ri-pie-chart-line" style="color:#f77f00"></i><h3>Data Visualization</h3></div></div>
-        <div class="col-lg-3 col-md-4 mt-4"><div class="icon-box"><i class="ri-robot-line" style="color:#06d6a0"></i><h3>AI Applications</h3></div></div>
-        <div class="col-lg-3 col-md-4 mt-4"><div class="icon-box"><i class="ri-line-chart-line" style="color:#ef476f"></i><h3>Predictive Modeling</h3></div></div>
-        <div class="col-lg-3 col-md-4 mt-4"><div class="icon-box"><i class="ri-code-s-slash-fill" style="color:#7b2ff7"></i><h3>Software Dev</h3></div></div>
+      <div class="hero-links">
+        <a href="https://github.com/prajwal816" target="_blank" class="hero-link">
+          <i class="bx bxl-github"></i> GitHub
+        </a>
+        <a href="https://linkedin.com/in/prajwal-aaryan-immadi" target="_blank" class="hero-link">
+          <i class="bx bxl-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:prajwal1084@email.com" class="hero-link">
+          <i class="bx bx-envelope"></i> Contact
+        </a>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
       </div>
     </div>
   </section>
 
-  <!-- Education -->
-  <section id="education" class="services">
+  <!-- About / Research Profile -->
+  <section id="about" class="section">
     <div class="container">
-      <div class="section-title"><h2>Education</h2><div class="title-underline"></div></div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box education-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="education-header">
-              <h4><a href="https://vitap.ac.in/" target="_blank" style="color:#64ffda">VIT-AP University, Amaravati</a></h4>
-              <span class="education-date">Aug 2023 — Present</span>
+      <div class="section-header">
+        <div class="section-label">01</div>
+        <h2 class="section-title">Research Profile</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">Prajwal Aaryan Immadi is an engineering student and researcher specializing in machine learning applications within high energy physics and scientific computing. His work spans CMS collision data analysis, trigger emulation pipelines, and SUSY signal region classification — leveraging large-scale datasets from CERN Open Data to develop data-driven methodologies for particle physics.</p>
+          <p>With dual academic training in Computer Science (VIT-AP University, CGPA: 9.06/10) and Data Science & Artificial Intelligence (IIT Guwahati), he combines rigorous computational expertise with domain knowledge in detector physics, statistical analysis, and ML-driven event classification. His research orientation emphasizes reproducibility, quantitative rigor, and systems-level thinking.</p>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <div class="detail-icon"><i class="bx bx-buildings"></i></div>
+            <div class="detail-content">
+              <h4>VIT-AP University</h4>
+              <p>B.Tech in Computer Science & Engineering</p>
+              <span class="detail-meta">CGPA: 9.06/10 · Sep 2023 — Present</span>
             </div>
-            <p class="education-degree"><em>B.Tech in Computer Science and Engineering</em></p>
-            <ul><li>Hackathons, coding competitions, tech events</li><li>Focus: ML, Digital Image Processing, Data Science</li></ul>
           </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box education-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="education-header">
-              <h4><a href="https://www.iitg.ac.in/" target="_blank" style="color:#64ffda">IIT Guwahati (Online)</a></h4>
-              <span class="education-date">Oct 2023 — Present</span>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="bx bx-atom"></i></div>
+            <div class="detail-content">
+              <h4>IIT Guwahati (Online)</h4>
+              <p>BSc (Hons) in Data Science & AI</p>
+              <span class="detail-meta">Oct 2023 — Present</span>
             </div>
-            <p class="education-degree"><em>BSc (Hons) in Data Science and AI</em></p>
-            <ul><li>ML, deep learning, statistical analysis, big data</li><li>Python, R, SQL, AI-driven technologies</li></ul>
           </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box education-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="education-header">
-              <h4>Sree Vidyanikethan International School, Tirupati</h4>
-              <span class="education-date">Jun 2021 — May 2023</span>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="bx bx-certification"></i></div>
+            <div class="detail-content">
+              <h4>Azure AI Engineer Associate</h4>
+              <p>Microsoft · Credential: CE52B8908052CDE0</p>
+              <span class="detail-meta">Jun 2024</span>
             </div>
-            <p class="education-degree"><em>12th Grade — Graduated with Honors</em></p>
-            <ul><li>Student council member, debate competitions</li><li>Balanced academics and extracurriculars</li></ul>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon"><i class="bx bx-data"></i></div>
+            <div class="detail-content">
+              <h4>Certified Data Science Professional</h4>
+              <p>Oracle</p>
+              <span class="detail-meta">Oct 2025</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research Interests -->
+  <section id="research-interests" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">02</div>
+        <h2 class="section-title">Research Interests</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="interests-grid">
+        <div class="interest-card" data-particle="proton">
+          <div class="interest-icon">
+            <svg viewBox="0 0 40 40" class="interest-svg">
+              <circle cx="20" cy="20" r="16" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+              <circle cx="20" cy="20" r="8" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.8"/>
+            </svg>
+          </div>
+          <h3>High Energy Physics</h3>
+          <p>CMS detector data analysis, collision event classification, trigger emulation, and SUSY signal region identification using CERN Open Data</p>
+        </div>
+        <div class="interest-card" data-particle="neuron">
+          <div class="interest-icon">
+            <svg viewBox="0 0 40 40" class="interest-svg">
+              <path d="M8 20 Q14 8 20 20 Q26 32 32 20" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              <path d="M8 20 Q14 32 20 20 Q26 8 32 20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+              <circle cx="20" cy="20" r="3" fill="currentColor" opacity="0.8"/>
+            </svg>
+          </div>
+          <h3>Machine Learning</h3>
+          <p>Multi-label classification, gradient boosting, neural architectures, SHAP explainability, and model interpretability for physics-driven applications</p>
+        </div>
+        <div class="interest-card" data-particle="data">
+          <div class="interest-icon">
+            <svg viewBox="0 0 40 40" class="interest-svg">
+              <rect x="6" y="14" width="28" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+              <line x1="10" y1="20" x2="14" y2="18" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              <line x1="14" y1="18" x2="18" y2="24" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              <line x1="18" y1="24" x2="22" y2="16" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              <line x1="22" y1="16" x2="26" y2="22" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+              <line x1="26" y1="22" x2="30" y2="17" stroke="currentColor" stroke-width="1.5" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3>Data-Driven Systems</h3>
+          <p>Large-scale data pipelines, statistical anomaly detection, drift monitoring, and data-driven background estimation techniques</p>
+        </div>
+        <div class="interest-card" data-particle="compute">
+          <div class="interest-icon">
+            <svg viewBox="0 0 40 40" class="interest-svg">
+              <rect x="8" y="8" width="10" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+              <rect x="22" y="8" width="10" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+              <rect x="8" y="22" width="10" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+              <rect x="22" y="22" width="10" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+              <circle cx="20" cy="20" r="2" fill="currentColor" opacity="0.8"/>
+            </svg>
+          </div>
+          <h3>Computational Modeling</h3>
+          <p>Scientific computing with ROOT, NumPy, SciPy; mathematical modeling, Monte Carlo methods, and simulation-based inference</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Research & Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">03</div>
+        <h2 class="section-title">Research & Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Project 1 -->
+      <div class="research-entry">
+        <div class="entry-accent"></div>
+        <div class="entry-content">
+          <div class="entry-header">
+            <h3>CMS Trigger Emulation Pipeline</h3>
+            <div class="entry-meta">
+              <a href="https://github.com/prajwal816/CMS-TriggerEmulation" target="_blank" class="entry-link">
+                <i class="bx bxl-github"></i> View Repository
+              </a>
+            </div>
+          </div>
+          <div class="entry-tags">
+            <span>Python</span><span>LightGBM</span><span>ROOT</span><span>SHAP</span><span>Parquet</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-section">
+              <h4>Problem Statement</h4>
+              <p>Emulating CMS High-Level Trigger decisions on large-scale Run-2 collision data to enable offline analysis of trigger efficiency and systematic uncertainties without requiring access to the full online trigger infrastructure.</p>
+            </div>
+            <div class="entry-section">
+              <h4>Technical Methodology</h4>
+              <p>Built an end-to-end ML pipeline processing 1.37M+ DoubleMuon collision events from CERN Open Data. Converted 6 ROOT NanoAOD branches to certified Parquet format. Implemented leakage-safe multi-label LightGBM classification with event-level grouping across 1.17M unique events.</p>
+            </div>
+            <div class="entry-section">
+              <h4>Results</h4>
+              <ul class="results-list">
+                <li><span class="result-metric">ROC-AUC 0.854</span> via multi-label classification with event-level grouping</li>
+                <li>SHAP explainability analysis and drift monitoring across <strong>3 trigger paths</strong></li>
+                <li>Processed <strong>1.37M+</strong> collision events from CERN Open Data Portal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="research-entry">
+        <div class="entry-accent"></div>
+        <div class="entry-content">
+          <div class="entry-header">
+            <h3>CMS SUSY Signal Region Analysis</h3>
+            <div class="entry-meta">
+              <a href="https://github.com/prajwal816/CMS-SUSY-Analysis" target="_blank" class="entry-link">
+                <i class="bx bxl-github"></i> View Repository
+              </a>
+            </div>
+          </div>
+          <div class="entry-tags">
+            <span>Python</span><span>ROOT</span><span>Scikit-learn</span><span>Pandas</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-section">
+              <h4>Problem Statement</h4>
+              <p>Developing a classification pipeline to discriminate Supersymmetry (SUSY) signal events from Standard Model background processes in CMS 2016G collision data, enabling systematic exploration of beyond-Standard-Model physics signatures.</p>
+            </div>
+            <div class="entry-section">
+              <h4>Technical Methodology</h4>
+              <p>Constructed a SUSY vs. Standard Model classification pipeline processing 500K+ collision events. Extracted 15+ physics features from ROOT files and engineered signal-region discriminants. Evaluated 4 classifier architectures with cross-validated statistical analysis.</p>
+            </div>
+            <div class="entry-section">
+              <h4>Results</h4>
+              <ul class="results-list">
+                <li>Data-driven background estimation to isolate SUSY signal regions at <span class="result-metric">95% confidence level</span></li>
+                <li>Extracted <strong>15+</strong> physics features with engineered discriminants</li>
+                <li>Cross-validated evaluation of <strong>4 classifier architectures</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="research-entry">
+        <div class="entry-accent"></div>
+        <div class="entry-content">
+          <div class="entry-header">
+            <h3>CMS Anomaly Detection in Jet Physics</h3>
+            <div class="entry-meta">
+              <a href="https://github.com/prajwal816/CMS-Anomalies" target="_blank" class="entry-link">
+                <i class="bx bxl-github"></i> View Repository
+              </a>
+            </div>
+          </div>
+          <div class="entry-tags">
+            <span>Python</span><span>ROOT</span><span>NumPy</span><span>Matplotlib</span>
+          </div>
+          <div class="entry-body">
+            <div class="entry-section">
+              <h4>Problem Statement</h4>
+              <p>Designing multi-subsystem anomaly detection pipelines for CMS jet physics data to identify outlier events that may indicate detector malfunction, novel physics processes, or data quality issues across multiple detector subsystems.</p>
+            </div>
+            <div class="entry-section">
+              <h4>Technical Methodology</h4>
+              <p>Designed anomaly detection pipelines across 4 detector subsystems — jet substructure, jet flavor tagging, event-shape variables, and vertex/pileup — processing 200K+ collision events from CMS Open Data. Executed statistical anomaly scoring on jet composition and trigger-rate distributions.</p>
+            </div>
+            <div class="entry-section">
+              <h4>Results</h4>
+              <ul class="results-list">
+                <li>Flagged <span class="result-metric">2.3% outlier events</span> for quality monitoring</li>
+                <li>Analyzed across <strong>4 detector subsystems</strong></li>
+                <li>Processed <strong>200K+</strong> collision events for data integrity assessment</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">04</div>
+        <h2 class="section-title">Research & Publications</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="publications-list">
+        <div class="publication-entry">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <h3>Higgs Boson Detection via Machine Learning Classification</h3>
+            <p class="pub-detail">Trained 3 ML models on 250K+ simulated collision events for Higgs boson signature identification, achieving 89% classification accuracy. Paper submitted for publication.</p>
+            <div class="pub-status"><span class="status-badge submitted">Submitted</span></div>
+          </div>
+        </div>
+        <div class="publication-entry">
+          <div class="pub-year">2024</div>
+          <div class="pub-content">
+            <h3>Pneumonia Detection from Chest X-ray Imaging via Convolutional Neural Networks</h3>
+            <p class="pub-detail">Designed a CNN-based classification pipeline on 5,800+ chest X-ray images achieving 94% detection accuracy. Paper accepted for academic conference presentation.</p>
+            <div class="pub-status"><span class="status-badge accepted">Accepted</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Competencies -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">05</div>
+        <h2 class="section-title">Technical Competencies</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="competencies-grid">
+        <div class="competency-group">
+          <h3 class="competency-label">Programming Languages</h3>
+          <div class="competency-items">
+            <span class="comp-item">Python</span>
+            <span class="comp-item">C++</span>
+            <span class="comp-item">Java</span>
+            <span class="comp-item">R</span>
+            <span class="comp-item">SQL</span>
+            <span class="comp-item">JavaScript</span>
+          </div>
+        </div>
+        <div class="competency-group">
+          <h3 class="competency-label">ML / AI Frameworks</h3>
+          <div class="competency-items">
+            <span class="comp-item">PyTorch</span>
+            <span class="comp-item">TensorFlow</span>
+            <span class="comp-item">Scikit-learn</span>
+            <span class="comp-item">LightGBM</span>
+            <span class="comp-item">Graph Neural Networks</span>
+            <span class="comp-item">CNNs</span>
+            <span class="comp-item">Reinforcement Learning</span>
+          </div>
+        </div>
+        <div class="competency-group">
+          <h3 class="competency-label">Scientific Computing</h3>
+          <div class="competency-items">
+            <span class="comp-item">ROOT</span>
+            <span class="comp-item">NumPy</span>
+            <span class="comp-item">Pandas</span>
+            <span class="comp-item">SciPy</span>
+            <span class="comp-item">Matplotlib</span>
+            <span class="comp-item">Statistical Analysis</span>
+            <span class="comp-item">Mathematical Modeling</span>
+          </div>
+        </div>
+        <div class="competency-group">
+          <h3 class="competency-label">Tools & Infrastructure</h3>
+          <div class="competency-items">
+            <span class="comp-item">Git</span>
+            <span class="comp-item">Linux</span>
+            <span class="comp-item">Docker</span>
+            <span class="comp-item">FastAPI</span>
+            <span class="comp-item">REST APIs</span>
+            <span class="comp-item">CI/CD</span>
+            <span class="comp-item">Azure</span>
+            <span class="comp-item">Tableau</span>
           </div>
         </div>
       </div>
@@ -128,190 +387,45 @@
   </section>
 
   <!-- Experience -->
-  <section id="experience" class="services">
+  <section id="experience" class="section section-alt">
     <div class="container">
-      <div class="section-title"><h2>Experience</h2><div class="title-underline"></div></div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box experience-card" data-aos="fade-up" data-aos-delay="100">
-            <h4 style="text-align:left"><a href="#" style="color:#64ffda">YHills Edutech Pvt Ltd</a></h4>
-            <h5 style="text-align:left">Nov 2023 — Dec 2023</h5>
-            <p style="text-align:left;color:#ccd6f6"><em>Machine Learning Intern</em></p>
-            <ul style="text-align:left">
-              <li>Engineered ML model using scikit-learn and geospatial data to predict taxi fares with 95% accuracy</li>
-              <li>Integrated model into company's mobile application for real-time predictions</li>
+      <div class="section-header">
+        <div class="section-label">06</div>
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="experience-timeline">
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Web Engineering Intern</h3>
+                <p class="timeline-org">Infosys</p>
+              </div>
+              <span class="timeline-date">Sep 2025 — Nov 2025</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Architected 12+ modular software components and automated 8 workflows using Python, reducing routine task time by 20% and improving code stability by 15% through systematic debugging and CI/CD pipelines.</li>
+              <li>Delivered 5 cross-functional features across programming, database, and distributed systems modules, accelerating sprint velocity by 10% in an Agile team of 6 engineers.</li>
             </ul>
           </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box experience-card" data-aos="fade-up" data-aos-delay="200">
-            <h4 style="text-align:left"><a href="#" style="color:#64ffda">Prodigy InfoTech</a></h4>
-            <h5 style="text-align:left">Sep 2024</h5>
-            <p style="text-align:left;color:#ccd6f6"><em>Machine Learning Intern</em></p>
-            <ul style="text-align:left">
-              <li>Developed and deployed ML models for real-world applications</li>
-              <li>Gained experience in Python, TensorFlow, Scikit-Learn, and deep learning</li>
+        </div>
+        <div class="timeline-entry">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Full Stack Developer Intern</h3>
+                <p class="timeline-org">Cimhans · Hyderabad, Telangana</p>
+              </div>
+              <span class="timeline-date">Jun 2025 — Jul 2025</span>
+            </div>
+            <ul class="timeline-details">
+              <li>Deployed 4 responsive full-stack modules serving 500+ users, increasing engagement for mental-health services by 30%.</li>
+              <li>Integrated secure authentication and REST API backend logic across 3 microservices, lowering user-flow errors by 25%.</li>
+              <li>Optimized UI/UX performance across 10+ page components, improving interface load time by 40%.</li>
             </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-      <div class="section-title"><h2>Projects</h2><div class="title-underline"></div></div>
-      <div class="row portfolio-container">
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap project-card">
-            <div class="project-card-content">
-              <div class="project-icon"><i class="bx bx-brain"></i></div>
-              <h4>Machine Learning</h4>
-              <p>Comprehensive ML repository with datasets, algorithms, models, and tools.</p>
-              <div class="project-tags"><span>Python</span><span>Scikit-Learn</span><span>ML</span></div>
-            </div>
-            <div class="portfolio-links"><a href="https://github.com/prajwal816/Machine-Learning" target="_blank"><i class="bx bxl-github"></i> View Code</a></div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap project-card">
-            <div class="project-card-content">
-              <div class="project-icon"><i class="bx bx-home-alt"></i></div>
-              <h4>House Price Prediction</h4>
-              <p>Regression models to estimate house prices based on market data.</p>
-              <div class="project-tags"><span>Python</span><span>Jupyter</span><span>Regression</span></div>
-            </div>
-            <div class="portfolio-links"><a href="https://github.com/prajwal816/Houseprice" target="_blank"><i class="bx bxl-github"></i> View Code</a></div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap project-card">
-            <div class="project-card-content">
-              <div class="project-icon"><i class="bx bx-car"></i></div>
-              <h4>Parking Management</h4>
-              <p>Intelligent parking system using data analytics and optimization.</p>
-              <div class="project-tags"><span>Python</span><span>Jupyter</span><span>Analytics</span></div>
-            </div>
-            <div class="portfolio-links"><a href="https://github.com/prajwal816/Parking_Management" target="_blank"><i class="bx bxl-github"></i> View Code</a></div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap project-card">
-            <div class="project-card-content">
-              <div class="project-icon"><i class="bx bx-line-chart"></i></div>
-              <h4>Prodigy ML Task</h4>
-              <p>Predictive models on real datasets during Prodigy InfoTech internship.</p>
-              <div class="project-tags"><span>Python</span><span>ML</span><span>Jupyter</span></div>
-            </div>
-            <div class="portfolio-links"><a href="https://github.com/prajwal816/PRODIGY_ML_01" target="_blank"><i class="bx bxl-github"></i> View Code</a></div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap project-card">
-            <div class="project-card-content">
-              <div class="project-icon"><i class="bx bx-taxi"></i></div>
-              <h4>Taxi Fare Prediction</h4>
-              <p>ML model with geospatial data achieving 95% accuracy, integrated into mobile app.</p>
-              <div class="project-tags"><span>Scikit-Learn</span><span>Geospatial</span></div>
-            </div>
-            <div class="portfolio-links"><a href="https://github.com/prajwal816" target="_blank"><i class="bx bxl-github"></i> View Code</a></div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 portfolio-item">
-          <div class="portfolio-wrap project-card">
-            <div class="project-card-content">
-              <div class="project-icon"><i class="bx bx-plus-medical"></i></div>
-              <h4>Healthcare Analytics</h4>
-              <p>Data-driven healthcare solution using Altair RapidMiner for predictive analytics.</p>
-              <div class="project-tags"><span>RapidMiner</span><span>Healthcare</span></div>
-            </div>
-            <div class="portfolio-links"><a href="https://github.com/prajwal816" target="_blank"><i class="bx bxl-github"></i> View Code</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills" class="services">
-    <div class="container">
-      <div class="section-title"><h2>Skills</h2><div class="title-underline"></div></div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box skills-card" data-aos="fade-up" data-aos-delay="100">
-            <h4>Languages & Databases</h4>
-            <div class="skills-grid">
-              <div class="skill-item"><img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="Python" height="45" /><span class="skill-level experienced">Experienced</span></div>
-              <div class="skill-item"><img src="https://www.vectorlogo.zone/logos/java/java-horizontal.svg" alt="Java" height="45" /><span class="skill-level experienced">Experienced</span></div>
-              <div class="skill-item"><img src="https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg" alt="SQL" height="45" /><span class="skill-level proficient">Proficient</span></div>
-              <div class="skill-item"><div class="skill-text-logo">C++</div><span class="skill-level skillful">Skillful</span></div>
-              <div class="skill-item"><div class="skill-text-logo">R</div><span class="skill-level beginner">Beginner</span></div>
-            </div>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box skills-card" data-aos="fade-up" data-aos-delay="200">
-            <h4>Frameworks & Libraries</h4>
-            <div class="skills-grid">
-              <div class="skill-item"><img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="TensorFlow" height="50" /><span class="skill-level skillful">Skillful</span></div>
-              <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-Learn" height="45" /><span class="skill-level skillful">Skillful</span></div>
-              <div class="skill-item"><div class="skill-text-logo">Pandas</div><span class="skill-level experienced">Experienced</span></div>
-              <div class="skill-item"><div class="skill-text-logo">Matplotlib</div><span class="skill-level skillful">Skillful</span></div>
-            </div>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box skills-card" data-aos="fade-up" data-aos-delay="300">
-            <h4>Tools & Platforms</h4>
-            <div class="skills-grid">
-              <div class="skill-item"><img src="https://www.vectorlogo.zone/logos/jupyter/jupyter-ar21.svg" alt="Jupyter" height="50" /><span class="skill-level experienced">Experienced</span></div>
-              <div class="skill-item"><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-ar21.svg" alt="Git" height="50" /><span class="skill-level skillful">Skillful</span></div>
-              <div class="skill-item"><div class="skill-text-logo">Tableau</div><span class="skill-level beginner">Beginner</span></div>
-              <div class="skill-item"><div class="skill-text-logo">Azure AI</div><span class="skill-level skillful">Certified</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Certifications -->
-  <section id="certifications" class="services">
-    <div class="container">
-      <div class="section-title"><h2>Certifications & Achievements</h2><div class="title-underline"></div></div>
-      <div class="row">
-        <div class="col-lg-12" data-aos="fade-up">
-          <div class="col-md-12 mt-4 mt-md-0 icon-box cert-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="cert-header">
-              <div class="cert-icon"><i class="bx bx-cloud"></i></div>
-              <div class="cert-info"><h4>Azure AI Engineer Associate</h4><p class="cert-issuer">Microsoft</p></div>
-              <span class="cert-date">Jun 2024 — Jun 2025</span>
-            </div>
-            <p class="cert-detail">Credential ID: CE52B8908052CDE0</p>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box cert-card" data-aos="fade-up" data-aos-delay="150">
-            <div class="cert-header">
-              <div class="cert-icon"><i class="bx bx-brain"></i></div>
-              <div class="cert-info"><h4>Machine Learning with Python</h4><p class="cert-issuer">YHills Edutech</p></div>
-              <span class="cert-date">Nov — Dec 2023</span>
-            </div>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box cert-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="cert-header">
-              <div class="cert-icon"><i class="bx bx-trophy"></i></div>
-              <div class="cert-info"><h4>Altair Data Science Contest — 2nd Place 🏆</h4><p class="cert-issuer">Programmers' Paradise, CSVTU</p></div>
-              <span class="cert-date">Aug — Oct 2024</span>
-            </div>
-            <p class="cert-detail">Built a data-driven healthcare solution using Altair RapidMiner</p>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box cert-card" data-aos="fade-up" data-aos-delay="250">
-            <div class="cert-header">
-              <div class="cert-icon"><i class="bx bx-medal"></i></div>
-              <div class="cert-info"><h4>ML Master & Professional Certifications</h4><p class="cert-issuer">Altair Engineering</p></div>
-              <span class="cert-date">Oct 2024</span>
-            </div>
-          </div>
-          <div class="col-md-12 mt-4 mt-md-0 icon-box cert-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="cert-header">
-              <div class="cert-icon"><i class="bx bx-code-alt"></i></div>
-              <div class="cert-info"><h4>ML Intern Certificate</h4><p class="cert-issuer">Prodigy InfoTech</p></div>
-              <span class="cert-date">Sep 2024</span>
-            </div>
           </div>
         </div>
       </div>
@@ -319,49 +433,48 @@
   </section>
 
   <!-- Contact -->
-  <section id="contacts" class="contact">
+  <section id="contact" class="section">
     <div class="container">
-      <div class="section-title"><h2>Contact</h2><div class="title-underline"></div></div>
-      <div class="row mt-2">
-        <div class="col-md-6 d-flex align-items-stretch">
-          <div class="info-box"><i class="bx bx-map"></i><h3>Location</h3><p>Bachupally, Hyderabad — 500090</p></div>
+      <div class="section-header">
+        <div class="section-label">07</div>
+        <h2 class="section-title">Contact</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <i class="bx bx-envelope"></i>
+          <h4>Email</h4>
+          <a href="mailto:prajwal1084@email.com">prajwal1084@email.com</a>
         </div>
-        <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
-          <div class="info-box"><i class="bx bx-share-alt"></i><h3>Social Profiles</h3>
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/prajwal-aaryan-immadi-b6a130289" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://github.com/prajwal816" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="mailto:prajwal1084@gmail.com" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-            </div>
-          </div>
+        <div class="contact-card">
+          <i class="bx bxl-linkedin"></i>
+          <h4>LinkedIn</h4>
+          <a href="https://linkedin.com/in/prajwal-aaryan-immadi" target="_blank">linkedin.com/in/prajwal-aaryan-immadi</a>
         </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box"><i class="bx bx-envelope"></i><h3>Email</h3><p>prajwal1084@gmail.com</p></div>
+        <div class="contact-card">
+          <i class="bx bxl-github"></i>
+          <h4>GitHub</h4>
+          <a href="https://github.com/prajwal816" target="_blank">github.com/prajwal816</a>
         </div>
-        <div class="col-md-6 mt-4 d-flex align-items-stretch">
-          <div class="info-box"><i class="bx bxl-github"></i><h3>GitHub</h3><p><a href="https://github.com/prajwal816" target="_blank" style="color:#64ffda">github.com/prajwal816</a></p></div>
+        <div class="contact-card">
+          <i class="bx bx-phone"></i>
+          <h4>Phone</h4>
+          <span>+91-9059006666</span>
         </div>
       </div>
     </div>
   </section>
 
-  <footer id="footer"><div class="container"><p>&copy; 2024 Prajwal Aaryan Immadi. All Rights Reserved.</p></div></footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2026 Prajwal Aaryan Immadi. All rights reserved.</p>
+        <p class="footer-note">Designed with scientific precision.</p>
+      </div>
+    </div>
+  </footer>
 
-  <script src="resources/vendor/jquery/jquery.min.js"></script>
-  <script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="resources/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="resources/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="resources/vendor/counterup/counterup.min.js"></script>
-  <script src="resources/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="resources/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="resources/vendor/venobox/venobox.min.js"></script>
-  <script src="resources/vendor/typed.js/typed.min.js"></script>
-  <script>
-    var typed = new Typed(".typing", {
-      strings: ["ML Engineer", "Data Scientist", "Python Developer", "AI Enthusiast"],
-      loop: true, typeSpeed: 65, backSpeed: 65,
-    });
-  </script>
   <script src="resources/js/main.js"></script>
 </body>
 </html>
