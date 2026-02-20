@@ -116,7 +116,8 @@
   document.addEventListener("DOMContentLoaded", () => {
     const revealEls = document.querySelectorAll(
       ".research-entry, .detail-card, .interest-card, .publication-entry, " +
-      ".competency-group, .timeline-entry, .contact-card, .section-header"
+      ".competency-group, .timeline-entry, .contact-card, .section-header, " +
+      ".condensed-project, .cert-entry"
     );
     revealEls.forEach((el, i) => {
       el.classList.add("reveal");
